@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid 2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <header>
+    <section id="hero">
+      <div class="hero">
+        <span class="label">Hero</span>
+      </div>
+      <div class="features-1">
+        <span class="label">Features 1</span>
+      </div>
+      <div class="features-2">
+        <span class="label">Features 2</span>
+      </div>
+    </section>
+    <nav>
+      <div class="brand">
+        <h1>RizStore</h1>
+      </div>
+      <ul class="list-nav">
+        <li class="list-item-nav"><a href="#">Home</a></li>
+        <li class="list-item-nav"><a href="#products">Products</a></li>
+        <li class="list-item-nav"><a href="#about">About</a></li>
+        <li class="list-item-nav"><a href="#">Contact</a></li>
+      </ul>
+      <div id="menu" class="humberger-menu">
+        <span class="line-humberger"></span>
+        <span class="line-humberger"></span>
+        <span class="line-humberger"></span>
+      </div>
+      <div class="menu-dropdown">
+        <ul class="list-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="products" class="products">
+      <h2>Products</h2>
+      <div class="wrapper-products">
+        <div class="product">
+          <img src="https://source.unsplash.com/random?pc&10" alt="Pc">
+          <span class="name">PC Gaming</span>
+        </div>
+        <div class="product">
+          <img src="https://source.unsplash.com/random?pc&1" alt="Product 1">
+          <span class="name">Product 1</span>
+        </div>
+        <div class="product">
+          <img src="https://source.unsplash.com/random?pc&2" alt="Product 2">
+          <span class="name">Product 2</span>
+        </div>
+        <div class="product">
+          <img src="https://source.unsplash.com/random?pc&3" alt="Product 3">
+          <span class="name">Product 3</span>
+        </div>
+        <div class="product">
+          <img src="https://source.unsplash.com/random?pc&4" alt="Product 4">
+          <span class="name">Product 4</span>
+        </div>
+        <div class="product">
+          <img src="https://source.unsplash.com/random?pc&5" alt="Product 5">
+          <span class="name">Product 5</span>
+        </div>
+        <div class="product">
+          <img src="https://source.unsplash.com/random?pc&6" alt="Product 6">
+          <span class="name">Product 6</span>
+        </div>
+        <div class="product">
+          <img src="https://source.unsplash.com/random?pc&7" alt="Product 7">
+          <span class="name">Product 7</span>
+        </div>
+        <div class="product">
+          <img src="https://source.unsplash.com/random?pc&8" alt="Product 8">
+          <span class="name">Product 8</span>
+        </div>
+        <div class="product">
+          <img src="https://source.unsplash.com/random?pc&9" alt="Product 9">
+          <span class="name">Product 9</span>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="image">
+        <img src="https://source.unsplash.com/random?people" alt="Product 9" width="300" height="300">
+      </div>
+      <div class="text-about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta saepe tempore sapiente voluptatum. Deleniti similique ex quam itaque officia nisi labore blanditiis dignissimos nulla? Maxime.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Coded with <svg viewBox="0 0 38 35" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+      <path
+        d="M19 35L16.245 32.4823C6.46 23.5749 0 17.7003 0 10.4905C0 4.6158 4.598 0 10.45 0C13.756 0 16.929 1.54496 19 3.98638C21.071 1.54496 24.244 0 27.55 0C33.402 0 38 4.6158 38 10.4905C38 17.7003 31.54 23.5749 21.755 32.5014L19 35Z"
+        fill="red"></path>
+    </svg>by<a href="http://instagram.com/rizkyprtm___" target="_blank" rel="noopener noreferrer">@Rizkyprtm___</a></p>
+  </footer>
+  <script>
+    const menu = document.getElementById("menu")
+
+    menu.addEventListener("click", () => {
+      menu.classList.toggle("open")
+    })
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        if (menu.classList.contains("open")) {
+          menu.classList.remove("open")
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
